@@ -81,11 +81,11 @@
         /* 1. Movimento Lateral (Esquerda -> Direita) */
         @keyframes moveX {
             0% {
-                left: -10%;
+                left: -20%;
                 opacity: 0;
             }
 
-            5% {
+            10% {
                 opacity: 1;
             }
 
@@ -94,7 +94,7 @@
             }
 
             100% {
-                left: 110%;
+                left: 120%;
                 opacity: 0;
             }
         }
@@ -107,8 +107,23 @@
             }
 
             100% {
-                transform: translateY(-200px);
+                transform: translateY(-150px);
                 animation-timing-function: ease-in;
+            }
+        }
+
+        /* Ajuste de altura do pulo para mobile */
+        @media (max-width: 768px) {
+            @keyframes bounceY {
+                0% {
+                    transform: translateY(0);
+                    animation-timing-function: ease-out;
+                }
+
+                100% {
+                    transform: translateY(-80px);
+                    animation-timing-function: ease-in;
+                }
             }
         }
 
@@ -119,35 +134,47 @@
             }
 
             100% {
-                transform: rotate(1440deg);
+                transform: rotate(1080deg);
             }
         }
 
         .ball-wrapper {
             position: absolute;
-            bottom: 12%;
-            /* Altura do chão */
-            left: -10%;
+            bottom: 15%;
+            /* Um pouco mais alto para não bater nos botões do mobile */
+            left: -20%;
             z-index: 30;
             pointer-events: none;
-            /* Duração total da travessia: 5s */
-            animation: moveX 5s linear 1 forwards;
-            /* Atraso leve para começar depois que o site monta */
-            animation-delay: 0.5s;
+
+            /* Padrão Mobile: Mais rápido (3s) */
+            animation: moveX 3s linear 1 forwards;
+            animation-delay: 0.2s;
             opacity: 0;
-            /* Começa invisível até a animação iniciar */
+        }
+
+        /* Padrão Desktop: Mais tempo (5s) pois a tela é maior */
+        @media (min-width: 768px) {
+            .ball-wrapper {
+                bottom: 12%;
+                animation-duration: 5s;
+                animation-delay: 0.5s;
+            }
         }
 
         .ball-bouncer {
             /* Pula para cima e volta (alternate) várias vezes */
-            animation: bounceY 0.6s infinite alternate;
-            animation-delay: 0.5s;
+            animation: bounceY 0.5s infinite alternate;
         }
 
         .ball-rotator {
             /* Gira constantemente */
-            animation: rotateBall 5s linear 1 forwards;
-            animation-delay: 0.5s;
+            animation: rotateBall 3s linear 1 forwards;
+        }
+
+        @media (min-width: 768px) {
+            .ball-rotator {
+                animation-duration: 5s;
+            }
         }
     </style>
 </head>
@@ -187,8 +214,9 @@
     </nav>
 
     <!-- Hero Section -->
+    <!-- UPDATED: min-h-[60vh] for mobile prevents large gap; md:min-h-screen for desktop -->
     <header id="inicio"
-        class="relative min-h-screen flex items-end justify-center overflow-hidden pt-24 pb-10 bg-[#FFCD00]">
+        class="relative min-h-[60vh] md:min-h-screen flex items-end justify-center overflow-hidden pt-24 pb-10 bg-[#FFCD00]">
 
         <!-- Background Layer with Image -->
         <div class="absolute top-24 bottom-0 left-0 right-0 z-0 flex items-center justify-center">
@@ -202,8 +230,8 @@
         <!-- NEW ANIMATION STRUCTURE: Bouncing Ball Across Screen -->
         <div class="ball-wrapper">
             <div class="ball-bouncer">
-                <!-- Tamanho reduzido para w-28 (mobile) e w-40 (desktop) para igualar ao banner -->
-                <svg class="ball-rotator w-28 md:w-40 drop-shadow-2xl" viewBox="0 0 512 512"
+                <!-- Tamanho otimizado: w-24 (mobile) e w-40 (desktop) -->
+                <svg class="ball-rotator w-24 md:w-40 drop-shadow-2xl" viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <radialGradient id="ballGrad" cx="30%" cy="30%" r="70%">
@@ -284,8 +312,9 @@
         </div>
 
         <!-- Container de Botões - Posicionamento Lateral -->
+        <!-- UPDATED: pb-12 on mobile to lift buttons closer to the reduced-height image -->
         <div
-            class="absolute inset-0 z-20 pointer-events-none flex flex-col md:flex-row items-center md:items-center justify-end md:justify-between px-4 md:px-12 pb-8 md:pb-0 max-w-7xl mx-auto w-full">
+            class="absolute inset-0 z-20 pointer-events-none flex flex-col md:flex-row items-center md:items-center justify-end md:justify-between px-4 md:px-12 pb-12 md:pb-0 max-w-7xl mx-auto w-full">
 
             <!-- Botão Esquerdo -->
             <a href="#sobre"
