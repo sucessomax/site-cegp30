@@ -62,7 +62,8 @@
 
     <style>
         .clip-diagonal {
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            /* Ajustado para 90% para ser menos agressivo */
         }
 
         /* Custom scrollbar */
@@ -413,14 +414,15 @@
     </section>
 
     <!-- Speakers Section (Escalação) -->
-    <section id="palestrantes" class="py-20 bg-cegpDark text-white clip-diagonal">
+    <!-- UPDATED: Aumentei o pb (padding-bottom) para pb-48 e reduzi o clip para 90% para evitar cortar o conteúdo -->
+    <section id="palestrantes" class="pt-20 pb-48 bg-cegpDark text-white clip-diagonal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div class="text-center mb-16">
                 <span class="text-cegpYellow font-bold tracking-widest uppercase">Quem vai jogar</span>
                 <h2 class="text-4xl md:text-5xl font-black text-white mt-2 uppercase">Nossa Seleção de Craques</h2>
             </div>
 
-            <!-- Grid de Palestrantes - Atualizado com Links das Imagens -->
+            <!-- Grid de Palestrantes - Atualizado com Bios -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
                 <!-- Palestrante 1: Andrea -->
@@ -431,10 +433,11 @@
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-white mb-1">Andrea</h3>
-                        <p class="text-cegpYellow text-sm font-semibold uppercase mb-3">Palestrante Confirmada</p>
-                        <p class="text-gray-400 text-xs line-clamp-3">Mini bio do profissional a ser inserida. Breve
-                            descrição sobre a trajetória e especialidade.</p>
+                        <h3 class="text-xl font-bold text-white mb-3">Andrea Tenuta</h3>
+                        <p class="text-gray-400 text-xs">Head de Novos Negócios da Maturi. Com 43 anos e mãe da Giulia e
+                            da Bruna é Bacharel em Administração com ênfase em Marketing pela ESPM, pós graduada e com
+                            MBA em Gestão Empresarial pela FIA-USP e Especialização em Gerontologia Social pelo Portal
+                            do Envelhecimento e Longeviver.</p>
                     </div>
                 </div>
 
@@ -446,10 +449,14 @@
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-white mb-1">David</h3>
-                        <p class="text-cegpYellow text-sm font-semibold uppercase mb-3">Palestrante Confirmado</p>
-                        <p class="text-gray-400 text-xs line-clamp-3">Mini bio do profissional a ser inserida. Breve
-                            descrição sobre a trajetória e especialidade.</p>
+                        <h3 class="text-xl font-bold text-white mb-3">David Braga</h3>
+                        <p class="text-gray-400 text-xs">Presidente da ABRH-MG, CEO, board advisor e headhunter da Prime
+                            Talent Executive Search, empresa de busca e seleção de executivos, presente em 30 países e
+                            50 escritórios pela Agilium Group. Conselheiro de Administração e professor da Fundação Dom
+                            Cabral; é vice-presidente do Conselho de RH da ACMinas e preside o Conselho de Administração
+                            da ONG ChildFund Brasil. Também assina colunas na BandNews, nos jornais Diário do Comércio,
+                            no O Tempo, no Hoje em Dia e na revista Encontro. Autor do livro “Contrato ou Demitido – Só
+                            depende de você”.</p>
                     </div>
                 </div>
 
@@ -461,10 +468,11 @@
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-white mb-1">Renata</h3>
-                        <p class="text-cegpYellow text-sm font-semibold uppercase mb-3">Palestrante Confirmada</p>
-                        <p class="text-gray-400 text-xs line-clamp-3">Mini bio do profissional a ser inserida. Breve
-                            descrição sobre a trajetória e especialidade.</p>
+                        <h3 class="text-xl font-bold text-white mb-3">Renata Lourdes</h3>
+                        <p class="text-gray-400 text-xs">Certificada internacionalmente na metodologia do Padrão Disney
+                            de Excelência no encantamento ao cliente nos Estados Unidos e Ásia. Especialista em Gestão
+                            de Pessoas. Consultora organizacional, palestrante e presidente da ABRH - PI. 20 anos de
+                            atuação na àrea de desenvolvimento profissional e empresarial.</p>
                     </div>
                 </div>
 
@@ -476,10 +484,9 @@
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-white mb-1">Celina</h3>
-                        <p class="text-cegpYellow text-sm font-semibold uppercase mb-3">Palestrante Confirmada</p>
-                        <p class="text-gray-400 text-xs line-clamp-3">Mini bio do profissional a ser inserida. Breve
-                            descrição sobre a trajetória e especialidade.</p>
+                        <h3 class="text-xl font-bold text-white mb-3">Celina</h3>
+                        <p class="text-gray-400 text-xs">Mini bio do profissional a ser inserida. Breve descrição sobre
+                            a trajetória e especialidade.</p>
                     </div>
                 </div>
 
@@ -491,10 +498,12 @@
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-white mb-1">Marina</h3>
-                        <p class="text-cegpYellow text-sm font-semibold uppercase mb-3">Palestrante Confirmada</p>
-                        <p class="text-gray-400 text-xs line-clamp-3">Mini bio do profissional a ser inserida. Breve
-                            descrição sobre a trajetória e especialidade.</p>
+                        <h3 class="text-xl font-bold text-white mb-3">Marina Farias</h3>
+                        <p class="text-gray-400 text-xs">CEO da Rica pra Sempre, empresa líder em educação financeira
+                            para mulheres, Melhor Nano Influencer de Finanças do Brasil Creator do Shark Tank Brasil.
+                            Destaque na Revista Pequenas Empresas & Grandes Negócios. Criadora do Método Ricas pra
+                            Sempre. Tem como missão diminuir a desigualdade social e de gênero através da educação
+                            financeira.</p>
                     </div>
                 </div>
 
@@ -506,10 +515,9 @@
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-white mb-1">Alysson</h3>
-                        <p class="text-cegpYellow text-sm font-semibold uppercase mb-3">Palestrante Confirmado</p>
-                        <p class="text-gray-400 text-xs line-clamp-3">Mini bio do profissional a ser inserida. Breve
-                            descrição sobre a trajetória e especialidade.</p>
+                        <h3 class="text-xl font-bold text-white mb-3">Alysson</h3>
+                        <p class="text-gray-400 text-xs">Mini bio do profissional a ser inserida. Breve descrição sobre
+                            a trajetória e especialidade.</p>
                     </div>
                 </div>
 
@@ -521,10 +529,9 @@
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-white mb-1">Milton</h3>
-                        <p class="text-cegpYellow text-sm font-semibold uppercase mb-3">Palestrante Confirmado</p>
-                        <p class="text-gray-400 text-xs line-clamp-3">Mini bio do profissional a ser inserida. Breve
-                            descrição sobre a trajetória e especialidade.</p>
+                        <h3 class="text-xl font-bold text-white mb-3">Milton</h3>
+                        <p class="text-gray-400 text-xs">Mini bio do profissional a ser inserida. Breve descrição sobre
+                            a trajetória e especialidade.</p>
                     </div>
                 </div>
 
@@ -536,10 +543,12 @@
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-white mb-1">Gabriela</h3>
-                        <p class="text-cegpYellow text-sm font-semibold uppercase mb-3">Palestrante Confirmada</p>
-                        <p class="text-gray-400 text-xs line-clamp-3">Mini bio do profissional a ser inserida. Breve
-                            descrição sobre a trajetória e especialidade.</p>
+                        <h3 class="text-xl font-bold text-white mb-3">Gabriela Augusto</h3>
+                        <p class="text-gray-400 text-xs">É uma mulher trans, negra e lésbica. A interseccionalidade não
+                            é só parte da minha história, é o que dá profundidade à forma como falo e conecto pessoas.
+                            Essas vivências moldam cada palestra, cada conversa e cada ideia que compartilho sobre
+                            diversidade e inclusão, Bacharela em Direito pela PUC-SP, Diretora e fundadora da
+                            Transcendemos, Professora Aberje, FDC e FAAP</p>
                     </div>
                 </div>
 
