@@ -566,79 +566,40 @@
                 <span class="text-cegpGreen font-bold tracking-widest uppercase">Cronograma</span>
                 <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 uppercase">Tabela de Jogos</h2>
             </div>
-            <!-- Tabs -->
-            <div class="flex justify-center mb-12" id="tabs">
-                <button onclick="switchTab('day1')" id="btn-day1"
-                    class="px-8 py-3 bg-cegpGreen text-white rounded-l-lg font-bold text-lg uppercase focus:outline-none ring-offset-2 focus:ring-2 border-r border-green-700 shadow-md">
-                    21 Maio (1º Tempo)
-                </button>
-                <button onclick="switchTab('day2')" id="btn-day2"
-                    class="px-8 py-3 bg-gray-200 text-gray-600 rounded-r-lg font-bold text-lg uppercase hover:bg-gray-300 focus:outline-none transition-colors">
-                    22 Maio (2º Tempo)
-                </button>
-            </div>
-            <!-- Content Day 1 -->
-            <div id="day1" class="space-y-6">
+
+            <!-- Placeholder Temático de "Em Breve" -->
+            <div
+                class="bg-gray-50 border-4 border-dashed border-gray-200 rounded-3xl p-12 text-center relative overflow-hidden group hover:border-cegpYellow transition-colors duration-500">
+                <!-- Ícone Decorativo de Fundo -->
                 <div
-                    class="flex flex-col md:flex-row gap-4 border-b border-gray-100 pb-6 hover:bg-gray-50 p-4 rounded-lg transition-colors">
-                    <div class="md:w-32 flex-shrink-0 text-center md:text-left">
-                        <span class="block text-2xl font-black text-cegpGreen">08:00</span>
-                        <span class="text-sm text-gray-500 uppercase font-bold">Aquecimento</span>
-                    </div>
-                    <div class="flex-grow">
-                        <h4 class="text-xl font-bold text-gray-800">Credenciamento & Welcome Coffee</h4>
-                        <p class="text-gray-600 mt-1">Retirada de kits, networking inicial e ativação dos
-                            patrocinadores.</p>
-                    </div>
+                    class="absolute top-0 right-0 -mt-10 -mr-10 text-gray-100 transform rotate-12 transition-transform group-hover:scale-110">
+                    <i class="fas fa-clipboard-list text-9xl"></i>
                 </div>
-                <div
-                    class="flex flex-col md:flex-row gap-4 border-b border-gray-100 pb-6 hover:bg-gray-50 p-4 rounded-lg transition-colors">
-                    <div class="md:w-32 flex-shrink-0 text-center md:text-left">
-                        <span class="block text-2xl font-black text-cegpGreen">09:30</span>
-                        <span class="text-sm text-gray-500 uppercase font-bold">Apito Inicial</span>
+
+                <div class="relative z-10 flex flex-col items-center">
+                    <div
+                        class="inline-flex items-center justify-center w-24 h-24 bg-white rounded-full mb-6 text-cegpYellow shadow-lg animate-pulse border-4 border-cegpYellow">
+                        <i class="fas fa-stopwatch text-4xl"></i>
                     </div>
-                    <div class="flex-grow">
-                        <h4 class="text-xl font-bold text-gray-800">Cerimônia de Abertura</h4>
-                        <p class="text-gray-600 mt-1">Abertura oficial com a diretoria da ABRH-SE e autoridades.</p>
-                    </div>
-                </div>
-                <div
-                    class="flex flex-col md:flex-row gap-4 border-b border-gray-100 pb-6 hover:bg-gray-50 p-4 rounded-lg transition-colors bg-yellow-50 border-l-4 border-cegpYellow">
-                    <div class="md:w-32 flex-shrink-0 text-center md:text-left">
-                        <span class="block text-2xl font-black text-cegpGreen">10:30</span>
-                        <span class="text-sm text-gray-500 uppercase font-bold">Palestra Magna</span>
-                    </div>
-                    <div class="flex-grow">
-                        <h4 class="text-xl font-bold text-gray-800">Liderança em Campo: Decisões sob Pressão</h4>
-                        <div class="flex items-center gap-2 mt-2">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-8 h-8 rounded-full">
-                            <p class="text-cegpBlue font-bold text-sm">Com Tite Silva (Ex-Técnico)</p>
+
+                    <h3 class="text-3xl font-black text-gray-800 mb-4 uppercase">Definindo a Tática</h3>
+
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+                        Nossos técnicos estão finalizando os últimos detalhes da escalação de horários e temas para
+                        garantir um espetáculo inesquecível.
+                        <br><br>
+                        <span class="font-bold text-cegpGreen">A programação completa será divulgada em breve!</span>
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-200 text-sm font-bold text-gray-500 flex items-center">
+                            <i class="fas fa-calendar-alt mr-3 text-cegpGreen text-xl"></i> 21 de Maio (1º Tempo)
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Content Day 2 -->
-            <div id="day2" class="space-y-6 hidden">
-                <div
-                    class="flex flex-col md:flex-row gap-4 border-b border-gray-100 pb-6 hover:bg-gray-50 p-4 rounded-lg transition-colors">
-                    <div class="md:w-32 flex-shrink-0 text-center md:text-left">
-                        <span class="block text-2xl font-black text-cegpGreen">09:00</span>
-                        <span class="text-sm text-gray-500 uppercase font-bold">Reinício</span>
-                    </div>
-                    <div class="flex-grow">
-                        <h4 class="text-xl font-bold text-gray-800">Painel: Diversidade no Time Titular</h4>
-                        <p class="text-gray-600 mt-1">Como a inclusão gera resultados práticos no placar da empresa.</p>
-                    </div>
-                </div>
-                <div
-                    class="flex flex-col md:flex-row gap-4 border-b border-gray-100 pb-6 hover:bg-gray-50 p-4 rounded-lg transition-colors bg-green-50 border-l-4 border-cegpGreen">
-                    <div class="md:w-32 flex-shrink-0 text-center md:text-left">
-                        <span class="block text-2xl font-black text-cegpGreen">16:00</span>
-                        <span class="text-sm text-gray-500 uppercase font-bold">Encerramento</span>
-                    </div>
-                    <div class="flex-grow">
-                        <h4 class="text-xl font-bold text-gray-800">Happy Hour dos Campeões</h4>
-                        <p class="text-gray-600 mt-1">Show de encerramento, premiação e networking.</p>
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-200 text-sm font-bold text-gray-500 flex items-center">
+                            <i class="fas fa-calendar-check mr-3 text-cegpGreen text-xl"></i> 22 de Maio (2º Tempo)
+                        </div>
                     </div>
                 </div>
             </div>
