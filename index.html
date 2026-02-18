@@ -55,9 +55,20 @@
     </script>
     
     <style>
+        /* FIX MOBILE: Ajuste do clip-path para telas pequenas.
+           Em mobile, a seção fica muito alta (muitos cards), então 10% de corte 
+           representa muitos pixels, cortando o conteúdo. Reduzi para 2% (98%) no mobile.
+        */
         .clip-diagonal {
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
         }
+        
+        @media (min-width: 768px) {
+            .clip-diagonal {
+                clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            }
+        }
+
         /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
@@ -611,7 +622,7 @@
                     userImg.onload = function() {
                         drawCard(userImg);
                         uploadArea.classList.remove('opacity-50', 'pointer-events-none');
-                        // Manter a área de upload visível
+                        // Manter a área de upload visível para facilitar trocas se necessário, mas o foco vai para o preview
                     };
                     userImg.src = e.target.result;
                 }
@@ -750,7 +761,6 @@
                     <h4 class="text-lg font-bold text-white mb-6 border-b-2 border-cegpYellow inline-block pb-1">Contato</h4>
                     <ul class="space-y-3 text-gray-400">
                         <li class="flex items-center gap-3"><i class="fas fa-envelope text-cegpYellow"></i> contato@abrhse.com.br</li>
-                        <!-- Phone Number Updated -->
                         <li class="flex items-center gap-3"><i class="fas fa-phone text-cegpYellow"></i> (79) 98133-5766</li>
                         <li class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-cegpYellow"></i> Aracaju, Sergipe</li>
                     </ul>
