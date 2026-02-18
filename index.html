@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>30º CEGP - Congresso Estadual de Gestão de Pessoas ABRH-SE</title>
     
-    <!-- Metadados para Redes Sociais (WhatsApp, LinkedIn, Facebook) -->
+    <!-- Metadados para Redes Sociais -->
     <meta property="og:title" content="30º CEGP - ABRH-SE | O Maior Congresso de RH de Sergipe">
     <meta property="og:description" content="Participe da edição histórica de 30 anos! Quando pessoas viram time, estratégias viram vitória. 21 e 22 de Maio de 2026.">
-    <!-- Banner Atualizado -->
     <meta property="og:image" content="https://i.ibb.co/5xxGh1Nz/banner-CEGP30.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -70,8 +69,7 @@
             background: #009C3B; 
         }
         
-        /* --- Animação da Bola Quicando --- */
-        /* 1. Movimento Lateral (Esquerda -> Direita) */
+        /* Animações da Bola */
         @keyframes moveX {
             0% { left: -20%; opacity: 0; }
             10% { opacity: 1; }
@@ -79,13 +77,11 @@
             100% { left: 120%; opacity: 0; }
         }
         
-        /* 2. Movimento Vertical (Pulo com gravidade simulada) */
         @keyframes bounceY {
             0% { transform: translateY(0); animation-timing-function: ease-out; }
             100% { transform: translateY(-150px); animation-timing-function: ease-in; }
         }
 
-        /* Ajuste de altura do pulo para mobile */
         @media (max-width: 768px) {
             @keyframes bounceY {
                 0% { transform: translateY(0); animation-timing-function: ease-out; }
@@ -93,7 +89,6 @@
             }
         }
 
-        /* 3. Rotação (Giro da bola enquanto corre) */
         @keyframes rotateBall {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(1080deg); }
@@ -101,18 +96,15 @@
 
         .ball-wrapper {
             position: absolute;
-            bottom: 25%; /* Ajustado para flutuar acima dos botões */
+            bottom: 25%;
             left: -20%;
             z-index: 30;
             pointer-events: none;
-            
-            /* Padrão Mobile: Mais rápido (3s) */
             animation: moveX 3s linear 1 forwards;
             animation-delay: 0.2s; 
             opacity: 0;
         }
 
-        /* Padrão Desktop: Mais tempo (5s) pois a tela é maior */
         @media (min-width: 768px) {
             .ball-wrapper {
                 bottom: 12%;
@@ -122,12 +114,10 @@
         }
 
         .ball-bouncer {
-            /* Pula para cima e volta (alternate) várias vezes */
             animation: bounceY 0.5s infinite alternate;
         }
 
         .ball-rotator {
-            /* Gira constantemente */
             animation: rotateBall 3s linear 1 forwards;
         }
         
@@ -149,20 +139,21 @@
                     <img src="https://abrhse.com.br/wp-content/uploads/2024/09/novaLogo_abrhse-e1725466217638.jpg" alt="Logo ABRH-SE" class="h-14 bg-white rounded-md p-1 shadow-sm">
                 </div>
                 <!-- Menu Links -->
-                <div class="hidden md:flex space-x-6 items-center">
+                <div class="hidden md:flex space-x-4 lg:space-x-6 items-center">
                     <a href="#inicio" class="hover:text-cegpYellow transition-colors font-semibold uppercase text-xs lg:text-sm tracking-wide">Início</a>
                     <a href="#sobre" class="hover:text-cegpYellow transition-colors font-semibold uppercase text-xs lg:text-sm tracking-wide">O Jogo</a>
                     <a href="#lote1" class="hover:text-cegpYellow transition-colors font-semibold uppercase text-xs lg:text-sm tracking-wide text-cegpYellow animate-pulse">Ingressos</a>
                     <a href="#palestrantes" class="hover:text-cegpYellow transition-colors font-semibold uppercase text-xs lg:text-sm tracking-wide">Escalação</a>
                     <a href="#programacao" class="hover:text-cegpYellow transition-colors font-semibold uppercase text-xs lg:text-sm tracking-wide">Tabela</a>
-                    <a href="#local" class="hover:text-cegpYellow transition-colors font-semibold uppercase text-xs lg:text-sm tracking-wide">Estádio</a>
                     <a href="#patrocinadores" class="hover:text-cegpYellow transition-colors font-semibold uppercase text-xs lg:text-sm tracking-wide">Patrocinadores</a>
+                    <!-- Link para o Card Eu Vou no Menu (Texto Atualizado) -->
+                    <a href="#euvou" class="bg-white text-cegpGreen px-3 py-1 rounded-full font-bold uppercase text-xs lg:text-sm tracking-wide shadow-md hover:bg-cegpYellow hover:text-cegpBlue transition-all border border-cegpGreen">EU VOU</a>
                 </div>
                 <div>
                     <!-- Botão Inscreva-se com Link Sympla -->
                     <a href="https://www.sympla.com.br/evento/copa-cegp-2026---30-ediCAo-do-congresso-estadual-gestAo-de-pessoas-abrhse/3244192" 
                        target="_blank" 
-                       class="bg-cegpYellow text-cegpGreen hover:bg-white hover:text-cegpGreen font-black py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-all uppercase text-sm tracking-wider border-2 border-transparent hover:border-cegpYellow">
+                       class="bg-cegpYellow text-cegpGreen hover:bg-white hover:text-cegpGreen font-black py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-all uppercase text-sm tracking-wider border-2 border-transparent hover:border-cegpYellow hidden md:inline-flex">
                         Inscreva-se
                     </a>
                 </div>
@@ -324,7 +315,6 @@
     </section>
 
     <!-- Speakers Section (Escalação) -->
-    <!-- UPDATED: pb-48 e clip-path 90% para não cortar texto da Gabriela -->
     <section id="palestrantes" class="pt-20 pb-48 bg-cegpDark text-white clip-diagonal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div class="text-center mb-16">
@@ -332,7 +322,7 @@
                 <h2 class="text-4xl md:text-5xl font-black text-white mt-2 uppercase">Nossa Seleção de Craques</h2>
             </div>
 
-            <!-- Grid de Palestrantes - Bios e Links Atualizados -->
+            <!-- Grid de Palestrantes - Atualizado com Bios -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 
                 <!-- Palestrante 1: Andrea -->
@@ -423,7 +413,7 @@
                     </div>
                 </div>
 
-                <!-- Palestrante 9: Thayslane -->
+                 <!-- Palestrante 9: Thayslane -->
                 <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/fY2hb242/thayslane.jpg" alt="Thayslane" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
@@ -445,27 +435,21 @@
                 <span class="text-cegpGreen font-bold tracking-widest uppercase">Cronograma</span>
                 <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 uppercase">Tabela de Jogos</h2>
             </div>
-
-            <!-- Placeholder Temático de "Em Breve" -->
+            <!-- Placeholder Temático -->
             <div class="bg-gray-50 border-4 border-dashed border-gray-200 rounded-3xl p-12 text-center relative overflow-hidden group hover:border-cegpYellow transition-colors duration-500">
-                <!-- Ícone Decorativo de Fundo -->
                 <div class="absolute top-0 right-0 -mt-10 -mr-10 text-gray-100 transform rotate-12 transition-transform group-hover:scale-110">
                     <i class="fas fa-clipboard-list text-9xl"></i>
                 </div>
-                
                 <div class="relative z-10 flex flex-col items-center">
                     <div class="inline-flex items-center justify-center w-24 h-24 bg-white rounded-full mb-6 text-cegpYellow shadow-lg animate-pulse border-4 border-cegpYellow">
                         <i class="fas fa-stopwatch text-4xl"></i>
                     </div>
-                    
                     <h3 class="text-3xl font-black text-gray-800 mb-4 uppercase">Definindo a Tática</h3>
-                    
                     <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
                         Nossos técnicos estão finalizando os últimos detalhes da escalação de horários e temas para garantir um espetáculo inesquecível.
                         <br><br>
                         <span class="font-bold text-cegpGreen">A programação completa será divulgada em breve!</span>
                     </p>
-                    
                     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <div class="bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-200 text-sm font-bold text-gray-500 flex items-center">
                             <i class="fas fa-calendar-alt mr-3 text-cegpGreen text-xl"></i> 21 de Maio (1º Tempo)
@@ -526,7 +510,6 @@
             <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 mb-12 uppercase">Quem Joga Junto</h2>
             
             <div class="flex justify-center items-center">
-                <!-- Link Atualizado dos Patrocinadores -->
                 <img src="https://i.ibb.co/RGqcQHZ6/patrocinadores.jpg" 
                      alt="Patrocinadores do 30º CEGP" 
                      class="max-w-full h-auto rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
@@ -539,6 +522,197 @@
             </div>
         </div>
     </section>
+
+    <!-- NEW SECTION: Gerador "Eu Vou!" (Layout de 2 Colunas com Preview) -->
+    <section id="euvou" class="py-24 bg-gray-900 text-white relative overflow-hidden">
+        <!-- Background Decorativo -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-cegpGreen rounded-full filter blur-[100px] opacity-20"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-cegpYellow rounded-full filter blur-[100px] opacity-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Coluna 1: Instruções e Upload -->
+                <div class="text-center md:text-left">
+                    <span class="text-cegpYellow font-bold tracking-widest uppercase mb-2 inline-block">Vista a Camisa</span>
+                    <h2 class="text-4xl md:text-6xl font-black text-white mb-6 uppercase">Eu Vou!</h2>
+                    <p class="text-gray-400 text-lg mb-10">
+                        Gere seu card oficial de convocação para a Copa CEGP, visualize o resultado e compartilhe com sua rede. Mostre que você faz parte desse time!
+                    </p>
+                    
+                    <!-- Área de Upload -->
+                    <div id="uploadArea" class="bg-gray-800 p-10 rounded-3xl border-4 border-dashed border-gray-600 hover:border-cegpGreen hover:bg-gray-750 transition-all group cursor-pointer shadow-2xl relative overflow-hidden" onclick="document.getElementById('uploadInput').click()">
+                        <div class="flex flex-col items-center justify-center space-y-4 relative z-10">
+                            <div class="w-20 h-20 bg-gray-700 rounded-full flex items-center justify-center group-hover:bg-cegpGreen group-hover:text-white transition-colors shadow-lg">
+                                <i class="fas fa-camera text-3xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-xl text-white group-hover:text-cegpGreen transition-colors">Escolher Foto</p>
+                                <p class="text-sm text-gray-500 mt-1">Recomendado: Foto de rosto estilo perfil</p>
+                            </div>
+                        </div>
+                        <input type="file" id="uploadInput" accept="image/*" class="hidden" onchange="generateCard(this)">
+                    </div>
+
+                    <!-- Botão de Garantir Ingresso - AGORA ABAIXO DO UPLOAD -->
+                    <div class="mt-8">
+                         <a href="https://www.sympla.com.br/evento/copa-cegp-2026---30-ediCAo-do-congresso-estadual-gestAo-de-pessoas-abrhse/3244192" 
+                           target="_blank" 
+                           class="bg-cegpGreen text-white font-black text-lg py-4 px-8 rounded-full shadow-lg hover:bg-green-700 transition-all flex items-center justify-center gap-3 w-full border-2 border-cegpYellow group">
+                            <i class="fas fa-ticket-alt group-hover:rotate-12 transition-transform"></i>
+                            GARANTIR MEU INGRESSO
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Preview e Ações -->
+                <div class="flex flex-col items-center justify-center">
+                    <!-- Container do Preview -->
+                    <div id="previewContainer" class="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-800 bg-gray-800 min-h-[400px] flex items-center justify-center group">
+                        <p id="placeholderText" class="text-gray-500 font-bold uppercase text-sm tracking-widest">Seu card aparecerá aqui</p>
+                        <img id="generatedImage" class="w-full h-auto hidden hover:opacity-90 transition-opacity" alt="Seu Card Personalizado">
+                    </div>
+
+                    <!-- Área de Ações (Inicialmente Oculta) -->
+                    <div id="actionArea" class="hidden flex-col items-center mt-8 w-full max-w-sm animate-fade-in-up gap-4">
+                        <div class="flex gap-4 w-full">
+                            <button onclick="downloadCard()" class="flex-1 bg-cegpYellow text-cegpBlue font-black py-3 rounded-full shadow-[0_0_15px_rgba(255,223,0,0.3)] hover:bg-white hover:scale-105 transition-all flex items-center justify-center gap-2">
+                                <i class="fas fa-download"></i> BAIXAR
+                            </button>
+                            <button onclick="resetCard()" class="flex-1 bg-gray-700 text-white font-bold py-3 rounded-full shadow-md hover:bg-gray-600 hover:text-cegpYellow transition-all flex items-center justify-center gap-2">
+                                <i class="fas fa-redo-alt"></i> REFAZER
+                            </button>
+                        </div>
+                        <p class="mt-2 text-xs text-gray-500 text-center">Baixe e poste no LinkedIn/Instagram marcando @abrhse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Canvas Oculto para Processamento -->
+        <canvas id="canvas" width="1080" height="1920" class="hidden"></canvas>
+    </section>
+
+    <!-- Script de Geração do Card -->
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const previewImg = document.getElementById('generatedImage');
+        const placeholderText = document.getElementById('placeholderText');
+        const actionArea = document.getElementById('actionArea');
+        const uploadArea = document.getElementById('uploadArea');
+
+        function generateCard(input) {
+            if (input.files && input.files[0]) {
+                uploadArea.classList.add('opacity-50', 'pointer-events-none');
+                
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const userImg = new Image();
+                    userImg.onload = function() {
+                        drawCard(userImg);
+                        uploadArea.classList.remove('opacity-50', 'pointer-events-none');
+                        // Manter a área de upload visível
+                    };
+                    userImg.src = e.target.result;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function drawCard(userImg) {
+            const background = new Image();
+            background.crossOrigin = "Anonymous";
+            background.src = "https://i.ibb.co/v6JLy8Br/euvou.png";
+            
+            background.onload = function() {
+                // 1. Desenhar Fundo (Template)
+                ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+
+                // 2. Desenhar Foto do Usuário (Centralizada na área transparente)
+                // A área transparente no template está aproximadamente no centro
+                // Ajuste fino das coordenadas baseado na imagem fornecida
+                const centerX = canvas.width / 2;
+                const centerY = 960; // Centro vertical aproximado da área da foto
+                const photoWidth = 600; // Largura desejada da foto
+                const photoHeight = 700; // Altura desejada da foto (retangular)
+                const photoX = centerX - (photoWidth / 2);
+                const photoY = centerY - (photoHeight / 2);
+
+                // Criar um recorte retangular suave
+                ctx.save();
+                ctx.beginPath();
+                // Usar rect simples para compatibilidade máxima
+                ctx.rect(photoX, photoY, photoWidth, photoHeight);
+                ctx.closePath();
+                // A foto deve ficar POR BAIXO dos elementos do template se ele tiver transparência
+                // Como estamos desenhando por cima, vamos desenhar a foto primeiro e o template depois?
+                // Não, o script carrega o BG primeiro.
+                // Se o PNG tem buraco transparente, a ordem certa é:
+                // 1. Limpar Canvas -> 2. Desenhar Foto -> 3. Desenhar BG
+                
+                // Vamos inverter a lógica para garantir que a foto fique atrás da moldura
+                ctx.restore();
+                ctx.clearRect(0,0, canvas.width, canvas.height);
+                
+                ctx.save();
+                // Desenhar Foto
+                ctx.beginPath();
+                ctx.rect(photoX, photoY, photoWidth, photoHeight);
+                ctx.clip();
+
+                // Proporção "Cover"
+                const scale = Math.max(photoWidth / userImg.width, photoHeight / userImg.height);
+                const w = userImg.width * scale;
+                const h = userImg.height * scale;
+                const x = photoX + (photoWidth - w) / 2;
+                const y = photoY + (photoHeight - h) / 2;
+
+                ctx.drawImage(userImg, x, y, w, h);
+                ctx.restore();
+
+                // 3. Desenhar o Template (PNG) por cima da foto
+                // Isso garante que a foto fique "encaixada" atrás dos elementos gráficos
+                ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+                
+                // 4. Desenhar "EU VOU!" e "Copa CEGP" (Elementos Extras sobrepostos)
+                // Caso o template já tenha esses elementos, eles serão desenhados no passo 3.
+                // Se precisar reforçar ou adicionar dinamicamente:
+                
+                // Exemplo: Selo "EU VOU" (se não estiver no PNG ou precisar de destaque)
+                // ctx.save();
+                // ... lógica de desenho extra ...
+                // ctx.restore();
+
+                // Mostrar Resultado
+                previewImg.src = canvas.toDataURL('image/png');
+                previewImg.classList.remove('hidden');
+                placeholderText.classList.add('hidden');
+                actionArea.classList.remove('hidden');
+                actionArea.classList.add('flex');
+            };
+            
+            background.onerror = function() {
+                alert("Erro ao carregar o modelo de fundo.");
+            };
+        }
+
+        function downloadCard() {
+            const link = document.createElement('a');
+            link.download = 'meu-card-cegp30.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+
+        function resetCard() {
+            document.getElementById('uploadInput').value = '';
+            previewImg.src = '';
+            previewImg.classList.add('hidden');
+            placeholderText.classList.remove('hidden');
+            actionArea.classList.add('hidden');
+            actionArea.classList.remove('flex');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    </script>
 
     <!-- CTA / Footer -->
     <footer class="bg-cegpDark text-white pt-20 pb-10 border-t-8 border-cegpYellow">
@@ -555,9 +729,10 @@
                         Há 30 anos transformando a gestão de pessoas em Sergipe. Junte-se a nós para a maior celebração do RH do estado.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/abrhse" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/abrhsergipe/" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/5579981335766" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@abrhse?si=kNVwOh6wbsMfZpi7" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
@@ -575,7 +750,8 @@
                     <h4 class="text-lg font-bold text-white mb-6 border-b-2 border-cegpYellow inline-block pb-1">Contato</h4>
                     <ul class="space-y-3 text-gray-400">
                         <li class="flex items-center gap-3"><i class="fas fa-envelope text-cegpYellow"></i> contato@abrhse.com.br</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-phone text-cegpYellow"></i> (79) 99999-9999</li>
+                        <!-- Phone Number Updated -->
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-cegpYellow"></i> (79) 98133-5766</li>
                         <li class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-cegpYellow"></i> Aracaju, Sergipe</li>
                     </ul>
                 </div>
