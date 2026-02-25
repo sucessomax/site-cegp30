@@ -55,10 +55,7 @@
     </script>
     
     <style>
-        /* FIX MOBILE: Ajuste do clip-path para telas pequenas.
-           Em mobile, a seção fica muito alta (muitos cards), então 10% de corte 
-           representa muitos pixels, cortando o conteúdo. Reduzi para 2% (98%) no mobile.
-        */
+        /* FIX MOBILE: Ajuste do clip-path para telas pequenas. */
         .clip-diagonal {
             clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
         }
@@ -146,7 +143,6 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center gap-3">
-                    <!-- Logo ABRH-SE Atualizada -->
                     <img src="https://abrhse.com.br/wp-content/uploads/2024/09/novaLogo_abrhse-e1725466217638.jpg" alt="Logo ABRH-SE" class="h-14 bg-white rounded-md p-1 shadow-sm">
                 </div>
                 <!-- Menu Links -->
@@ -157,11 +153,11 @@
                     <a href="#palestrantes" class="hover:text-cegpYellow transition-colors font-semibold uppercase text-xs lg:text-sm tracking-wide">Escalação</a>
                     <a href="#programacao" class="hover:text-cegpYellow transition-colors font-semibold uppercase text-xs lg:text-sm tracking-wide">Tabela</a>
                     <a href="#patrocinadores" class="hover:text-cegpYellow transition-colors font-semibold uppercase text-xs lg:text-sm tracking-wide">Patrocinadores</a>
-                    <!-- Link para o Card Eu Vou no Menu (Texto Atualizado) -->
+                    <!-- Link para o Card Eu Vou no Menu -->
                     <a href="#euvou" class="bg-white text-cegpGreen px-3 py-1 rounded-full font-bold uppercase text-xs lg:text-sm tracking-wide shadow-md hover:bg-cegpYellow hover:text-cegpBlue transition-all border border-cegpGreen">EU VOU</a>
                 </div>
                 <div>
-                    <!-- Botão Inscreva-se com Link Sympla -->
+                    <!-- Botão Inscreva-se -->
                     <a href="https://www.sympla.com.br/evento/copa-cegp-2026---30-ediCAo-do-congresso-estadual-gestAo-de-pessoas-abrhse/3244192" 
                        target="_blank" 
                        class="bg-cegpYellow text-cegpGreen hover:bg-white hover:text-cegpGreen font-black py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-all uppercase text-sm tracking-wider border-2 border-transparent hover:border-cegpYellow hidden md:inline-flex">
@@ -175,8 +171,6 @@
     <!-- Hero Section -->
     <header id="inicio" class="relative min-h-[90vh] md:min-h-screen flex items-end justify-center overflow-hidden pt-24 pb-10 bg-[#FFCD00]">
         
-        <!-- Background Layer with Image -->
-        <!-- Banner Atualizado -->
         <div class="absolute top-28 bottom-48 md:top-24 md:bottom-0 left-0 right-0 z-0 flex items-center justify-center">
             <div class="w-full h-full transition-transform duration-1000 hover:scale-105" 
                  style="background-image: url('https://i.ibb.co/5xxGh1Nz/banner-CEGP30.jpg'); 
@@ -186,7 +180,6 @@
             </div>
         </div>
 
-        <!-- NEW ANIMATION STRUCTURE: Bouncing Ball Across Screen -->
         <div class="ball-wrapper">
             <div class="ball-bouncer">
                 <svg class="ball-rotator w-24 md:w-40 drop-shadow-2xl" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -229,18 +222,15 @@
             </div>
         </div>
 
-        <!-- Blending Gradients -->
         <div class="absolute inset-y-0 left-0 w-16 md:w-48 bg-gradient-to-r from-[#FFCD00] via-[#FFCD00]/80 to-transparent z-10"></div>
         <div class="absolute inset-y-0 right-0 w-16 md:w-48 bg-gradient-to-l from-[#FFCD00] via-[#FFCD00]/80 to-transparent z-10"></div>
         <div class="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-[#FFCD00] to-transparent z-10"></div>
         <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/20 to-transparent z-10 pointer-events-none"></div>
 
-        <!-- Container de Botões -->
         <div class="absolute inset-0 z-20 pointer-events-none flex flex-col md:flex-row items-center md:items-center justify-end md:justify-between px-4 md:px-12 pb-16 md:pb-0 max-w-7xl mx-auto w-full gap-6 md:gap-0">
             <a href="#sobre" class="pointer-events-auto w-full max-w-xs md:w-auto bg-white/90 text-cegpGreen font-bold text-lg py-4 px-8 rounded-lg shadow-xl hover:bg-white transition-all transform hover:scale-105 border-2 border-transparent backdrop-blur-sm order-2 md:order-1 flex justify-center text-center">
                 SAIBA MAIS
             </a>
-            <!-- Botão Garantir Ingresso com Link Sympla -->
             <a href="https://www.sympla.com.br/evento/copa-cegp-2026---30-ediCAo-do-congresso-estadual-gestAo-de-pessoas-abrhse/3244192" 
                target="_blank" 
                class="pointer-events-auto w-full max-w-xs md:w-auto bg-cegpGreen text-white font-black text-lg py-4 px-8 rounded-lg shadow-2xl hover:bg-green-700 transition-all flex items-center justify-center gap-3 group transform hover:scale-105 border-2 border-cegpYellow ring-4 ring-black/20 backdrop-blur-sm order-1 md:order-2 text-center">
@@ -249,7 +239,6 @@
             </a>
         </div>
         
-        <!-- Wave Divider -->
         <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-30">
             <svg class="relative block w-[calc(100%+1.3px)] h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-gray-50"></path>
@@ -265,7 +254,6 @@
                 <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 uppercase">Entre em Campo</h2>
                 <div class="w-24 h-2 bg-cegpYellow mx-auto mt-4 rounded-full"></div>
             </div>
-            <!-- Content kept same as before -->
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
                     <p>
@@ -299,7 +287,6 @@
 
     <!-- NEW SECTION: Lote 1 (Ingressos) -->
     <section id="lote1" class="py-20 bg-cegpYellow relative overflow-hidden">
-        <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#009C3B 2px, transparent 2px); background-size: 20px 20px;"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -313,7 +300,6 @@
             </div>
 
             <div class="mt-12">
-                <!-- Botão Comprar Agora com Link Sympla -->
                 <a href="https://www.sympla.com.br/evento/copa-cegp-2026---30-ediCAo-do-congresso-estadual-gestAo-de-pessoas-abrhse/3244192" 
                    target="_blank"
                    class="bg-cegpGreen text-white font-black text-2xl py-4 px-12 rounded-full shadow-2xl hover:bg-green-800 transition-all inline-flex items-center gap-4 hover:-translate-y-1">
@@ -325,7 +311,7 @@
         </div>
     </section>
 
-    <!-- Speakers Section (Escalação) -->
+    <!-- Speakers Section -->
     <section id="palestrantes" class="pt-20 pb-48 bg-cegpDark text-white clip-diagonal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div class="text-center mb-16">
@@ -333,10 +319,7 @@
                 <h2 class="text-4xl md:text-5xl font-black text-white mt-2 uppercase">Nossa Seleção de Craques</h2>
             </div>
 
-            <!-- Grid de Palestrantes - Atualizado com Bios -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <!-- Palestrante 1: Andrea -->
                 <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/Zzgkc06q/andrea.jpg" alt="Andrea" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
@@ -347,91 +330,83 @@
                     </div>
                 </div>
 
-                <!-- Palestrante 2: David -->
                 <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/svqnMKMc/david.jpg" alt="David" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-white mb-3">David Braga</h3>
-                        <p class="text-gray-400 text-xs">Presidente da ABRH-MG, CEO, board advisor e headhunter da Prime Talent Executive Search, empresa de busca e seleção de executivos, presente em 30 países e 50 escritórios pela Agilium Group. Conselheiro de Administração e professor da Fundação Dom Cabral; é vice-presidente do Conselho de RH da ACMinas e preside o Conselho de Administração da ONG ChildFund Brasil. Também assina colunas na BandNews, nos jornais Diário do Comércio, no O Tempo, no Hoje em Dia e na revista Encontro. Autor do livro “Contrato ou Demitido – Só depende de você”.</p>
+                        <p class="text-gray-400 text-xs">Presidente da ABRH-MG, CEO, board advisor e headhunter da Prime Talent Executive Search. Conselheiro de Administração e professor da Fundação Dom Cabral; é vice-presidente do Conselho de RH da ACMinas e preside o Conselho de Administração da ONG ChildFund Brasil.</p>
                     </div>
                 </div>
 
-                <!-- Palestrante 3: Renata -->
                 <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/ttpCgfv/renata.jpg" alt="Renata" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-white mb-3">Renata Lourdes</h3>
-                        <p class="text-gray-400 text-xs">Certificada internacionalmente na metodologia do Padrão Disney de Excelência no encantamento ao cliente nos Estados Unidos e Ásia. Especialista em Gestão de Pessoas. Consultora organizacional, palestrante e presidente da ABRH - PI. 20 anos de atuação na àrea de desenvolvimento profissional e empresarial.</p>
+                        <p class="text-gray-400 text-xs">Certificada internacionalmente na metodologia do Padrão Disney de Excelência no encantamento ao cliente nos Estados Unidos e Ásia. Especialista em Gestão de Pessoas. Consultora organizacional, palestrante e presidente da ABRH - PI.</p>
                     </div>
                 </div>
 
-                <!-- Palestrante 4: Celina -->
                 <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/dwTtmyRW/celina.jpg" alt="Celina" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-white mb-3">Celina Joppert</h3>
-                        <p class="text-gray-400 text-xs">Criadora da Musicatividade®, cantoterapeuta, palestrante e consultora em desenvolvimento humano e organizacional. Diretora de cultura e integração da ABRH-Brasil, também criou o programa INSIDE – Conferences e o projeto social “Solte sua Voz por uma Causa”. Autora de Encontre sua Voz, difunde sua metodologia para uma vida com mais significado e realização.</p>
+                        <p class="text-gray-400 text-xs">Criadora da Musicatividade®, cantoterapeuta, palestrante e consultora em desenvolvimento humano e organizacional. Diretora de cultura e integração da ABRH-Brasil. Autora de Encontre sua Voz, difunde sua metodologia para uma vida com mais significado.</p>
                     </div>
                 </div>
 
-                <!-- Palestrante 5: Marina -->
                 <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/6Ryg7Cwr/marina.jpg" alt="Marina" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-white mb-3">Marina Farias</h3>
-                        <p class="text-gray-400 text-xs">CEO da Rica pra Sempre, empresa líder em educação financeira para mulheres, Melhor Nano Influencer de Finanças do Brasil Creator do Shark Tank Brasil. Destaque na Revista Pequenas Empresas & Grandes Negócios. Criadora do Método Ricas pra Sempre. Tem como missão diminuir a desigualdade social e de gênero através da educação financeira.</p>
+                        <p class="text-gray-400 text-xs">CEO da Rica pra Sempre, empresa líder em educação financeira para mulheres, Melhor Nano Influencer de Finanças do Brasil Creator do Shark Tank Brasil. Destaque na Revista Pequenas Empresas & Grandes Negócios.</p>
                     </div>
                 </div>
 
-                <!-- Palestrante 6: Alysson -->
                 <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/ZpFkJbqn/alysson.jpg" alt="Alysson" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-white mb-3">Alysson Costa</h3>
-                        <p class="text-gray-400 text-xs">Criador do movimento ATITUDENOW, Palestrante internacional, escritor 4xs autor Best Seller, jornalista e mentor de influência e protagonismo. Em 2023 entrou para a história como o primeiro brasileiro a fazer o pré lançamento de um livro nos telões da Times Square em Nova Iorque.</p>
+                        <p class="text-gray-400 text-xs">Criador do movimento ATITUDENOW, Palestrante internacional, escritor 4xs autor Best Seller, jornalista e mentor de influência e protagonismo. Em 2023 entrou para a história como o primeiro brasileiro a fazer o pré lançamento de um livro na Times Square.</p>
                     </div>
                 </div>
 
-                <!-- Palestrante 7: Milton -->
                 <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/pr3ZSttm/milton.jpg" alt="Milton" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-white mb-3">Milton Marinho</h3>
-                        <p class="text-gray-400 text-xs">Mestre em Psicologia, com sólida atuação em Gestão de Pessoas, Negócios e ESG. Foi executivo de RH em empresas nacionais e multinacionais e hoje atua como consultor, mentor e conselheiro em todo o Brasil e no exterior. É professor em instituições como FDC, FGV e IPOG. Presidente da ABRH-GO (2022–2027) e da Câmara de Gente e Gestão da ACIEG-GO (2025–2027).</p>
+                        <p class="text-gray-400 text-xs">Mestre em Psicologia, com sólida atuação em Gestão de Pessoas, Negócios e ESG. É professor em instituições como FDC, FGV e IPOG. Presidente da ABRH-GO (2022–2027) e da Câmara de Gente e Gestão da ACIEG-GO (2025–2027).</p>
                     </div>
                 </div>
 
-                <!-- Palestrante 8: Gabriela -->
                 <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/p6YkQMDy/gabriela.jpg" alt="Gabriela" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-white mb-3">Gabriela Augusto</h3>
-                        <p class="text-gray-400 text-xs">É uma mulher trans, negra e lésbica. A interseccionalidade não é só parte da minha história, é o que dá profundidade à forma como falo e conecto pessoas. Essas vivências moldam cada palestra, cada conversa e cada ideia que compartilho sobre diversidade e inclusão, Bacharela em Direito pela PUC-SP, Diretora e fundadora da Transcendemos, Professora Aberje, FDC e FAAP</p>
+                        <p class="text-gray-400 text-xs">Mulher trans, negra e lésbica. Bacharela em Direito pela PUC-SP, Diretora e fundadora da Transcendemos, Professora Aberje, FDC e FAAP. Suas vivências moldam cada palestra sobre diversidade e inclusão.</p>
                     </div>
                 </div>
 
-                 <!-- Palestrante 9: Thayslane -->
                 <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/fY2hb242/thayslane.jpg" alt="Thayslane" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-white mb-3">Thayslane Costa</h3>
-                        <p class="text-gray-400 text-xs">Natural de Aracaju (SE), é graduada em Educação Física, com pós-graduação em Ciências da Educação e Fisiologia do Exercício, e mestranda em Propriedade Intelectual. Árbitra desde 2007, foi a primeira mulher a atuar como árbitra central na elite do Campeonato Sergipano e a primeira sergipana a integrar o quadro de arbitragem da FIFA.</p>
+                        <p class="text-gray-400 text-xs">Natural de Aracaju (SE), graduada em Educação Física e mestranda em Propriedade Intelectual. Árbitra desde 2007, foi a primeira mulher a atuar como árbitra central na elite do Campeonato Sergipano e a primeira sergipana a integrar o quadro de arbitragem da FIFA.</p>
                     </div>
                 </div>
 
@@ -439,14 +414,13 @@
         </div>
     </section>
 
-    <!-- Schedule Section (Tabela) -->
+    <!-- Schedule Section -->
     <section id="programacao" class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <span class="text-cegpGreen font-bold tracking-widest uppercase">Cronograma</span>
                 <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 uppercase">Tabela de Jogos</h2>
             </div>
-            <!-- Placeholder Temático -->
             <div class="bg-gray-50 border-4 border-dashed border-gray-200 rounded-3xl p-12 text-center relative overflow-hidden group hover:border-cegpYellow transition-colors duration-500">
                 <div class="absolute top-0 right-0 -mt-10 -mr-10 text-gray-100 transform rotate-12 transition-transform group-hover:scale-110">
                     <i class="fas fa-clipboard-list text-9xl"></i>
@@ -474,7 +448,7 @@
         </div>
     </section>
 
-    <!-- Location Section (Estádio) -->
+    <!-- Location Section -->
     <section id="local" class="bg-stadium bg-cover bg-center bg-fixed py-24 relative">
         <div class="absolute inset-0 bg-green-900/80"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -514,7 +488,7 @@
         </div>
     </section>
 
-    <!-- Sponsors Section (Patrocinadores) -->
+    <!-- Sponsors Section -->
     <section id="patrocinadores" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span class="text-cegpGreen font-bold tracking-widest uppercase">Nossos Parceiros</span>
@@ -534,15 +508,15 @@
         </div>
     </section>
 
-    <!-- NEW SECTION: Gerador "Eu Vou!" (Layout de 2 Colunas com Preview) -->
+    <!-- NEW SECTION: Gerador "Eu Vou!" (Resolvido Geometria da Foto) -->
     <section id="euvou" class="py-24 bg-gray-900 text-white relative overflow-hidden">
-        <!-- Background Decorativo -->
         <div class="absolute top-0 right-0 w-64 h-64 bg-cegpGreen rounded-full filter blur-[100px] opacity-20"></div>
         <div class="absolute bottom-0 left-0 w-64 h-64 bg-cegpYellow rounded-full filter blur-[100px] opacity-10"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Coluna 1: Instruções e Upload -->
+                
+                <!-- Coluna 1: Instruções, Upload e Ingressos -->
                 <div class="text-center md:text-left">
                     <span class="text-cegpYellow font-bold tracking-widest uppercase mb-2 inline-block">Vista a Camisa</span>
                     <h2 class="text-4xl md:text-6xl font-black text-white mb-6 uppercase">Eu Vou!</h2>
@@ -564,7 +538,7 @@
                         <input type="file" id="uploadInput" accept="image/*" class="hidden" onchange="generateCard(this)">
                     </div>
 
-                    <!-- Botão de Garantir Ingresso - AGORA ABAIXO DO UPLOAD -->
+                    <!-- Botão de Garantir Ingresso -->
                     <div class="mt-8">
                          <a href="https://www.sympla.com.br/evento/copa-cegp-2026---30-ediCAo-do-congresso-estadual-gestAo-de-pessoas-abrhse/3244192" 
                            target="_blank" 
@@ -577,13 +551,11 @@
 
                 <!-- Coluna 2: Preview e Ações -->
                 <div class="flex flex-col items-center justify-center">
-                    <!-- Container do Preview -->
                     <div id="previewContainer" class="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-800 bg-gray-800 min-h-[400px] flex items-center justify-center group">
-                        <p id="placeholderText" class="text-gray-500 font-bold uppercase text-sm tracking-widest">Seu card aparecerá aqui</p>
+                        <p id="placeholderText" class="text-gray-500 font-bold uppercase text-sm tracking-widest text-center px-4">Seu card aparecerá aqui ao lado</p>
                         <img id="generatedImage" class="w-full h-auto hidden hover:opacity-90 transition-opacity" alt="Seu Card Personalizado">
                     </div>
 
-                    <!-- Área de Ações (Inicialmente Oculta) -->
                     <div id="actionArea" class="hidden flex-col items-center mt-8 w-full max-w-sm animate-fade-in-up gap-4">
                         <div class="flex gap-4 w-full">
                             <button onclick="downloadCard()" class="flex-1 bg-cegpYellow text-cegpBlue font-black py-3 rounded-full shadow-[0_0_15px_rgba(255,223,0,0.3)] hover:bg-white hover:scale-105 transition-all flex items-center justify-center gap-2">
@@ -599,11 +571,10 @@
             </div>
         </div>
 
-        <!-- Canvas Oculto para Processamento -->
         <canvas id="canvas" width="1080" height="1920" class="hidden"></canvas>
     </section>
 
-    <!-- Script de Geração do Card -->
+    <!-- Script de Geração do Card (Corrigido Algoritmo de Corte) -->
     <script>
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d');
@@ -622,7 +593,6 @@
                     userImg.onload = function() {
                         drawCard(userImg);
                         uploadArea.classList.remove('opacity-50', 'pointer-events-none');
-                        // Manter a área de upload visível para facilitar trocas se necessário, mas o foco vai para o preview
                     };
                     userImg.src = e.target.result;
                 }
@@ -636,63 +606,41 @@
             background.src = "https://i.ibb.co/v6JLy8Br/euvou.png";
             
             background.onload = function() {
-                // 1. Desenhar Fundo (Template)
-                ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+                // 1. Limpa o canvas e coloca fundo branco garantido
+                ctx.fillStyle = '#FFFFFF';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-                // 2. Desenhar Foto do Usuário (Centralizada na área transparente)
-                // A área transparente no template está aproximadamente no centro
-                // Ajuste fino das coordenadas baseado na imagem fornecida
-                const centerX = canvas.width / 2;
-                const centerY = 960; // Centro vertical aproximado da área da foto
-                const photoWidth = 600; // Largura desejada da foto
-                const photoHeight = 700; // Altura desejada da foto (retangular)
-                const photoX = centerX - (photoWidth / 2);
-                const photoY = centerY - (photoHeight / 2);
+                // 2. Área de pintura da foto (Box Model Ajustado)
+                // O buraco transparente do PNG começa por volta do Y=430.
+                // Se desenharmos acima disso, a máscara amarela cobre o topo da foto (cabeça).
+                // AJUSTE FINO: Descendo para 600 para garantir margem de segurança no topo (testa/cabelo).
+                const photoX = 90;
+                const photoY = 600; // Valor cravado em 600
+                const photoWidth = 900; // Largura do buraco
+                const photoHeight = 1150; // Altura suficiente para descer atrás do texto "EU VOU"
 
-                // Criar um recorte retangular suave
-                ctx.save();
-                ctx.beginPath();
-                // Usar rect simples para compatibilidade máxima
-                ctx.rect(photoX, photoY, photoWidth, photoHeight);
-                ctx.closePath();
-                // A foto deve ficar POR BAIXO dos elementos do template se ele tiver transparência
-                // Como estamos desenhando por cima, vamos desenhar a foto primeiro e o template depois?
-                // Não, o script carrega o BG primeiro.
-                // Se o PNG tem buraco transparente, a ordem certa é:
-                // 1. Limpar Canvas -> 2. Desenhar Foto -> 3. Desenhar BG
-                
-                // Vamos inverter a lógica para garantir que a foto fique atrás da moldura
-                ctx.restore();
-                ctx.clearRect(0,0, canvas.width, canvas.height);
-                
-                ctx.save();
-                // Desenhar Foto
-                ctx.beginPath();
-                ctx.rect(photoX, photoY, photoWidth, photoHeight);
-                ctx.clip();
-
-                // Proporção "Cover"
+                // Lógica de "Object-fit: Cover"
                 const scale = Math.max(photoWidth / userImg.width, photoHeight / userImg.height);
                 const w = userImg.width * scale;
                 const h = userImg.height * scale;
+                
+                // Centraliza no eixo X
                 const x = photoX + (photoWidth - w) / 2;
-                const y = photoY + (photoHeight - h) / 2;
+                
+                // EIXO Y (Garantia anti-corte de cabeça):
+                // Ao ancorar no Y exato (photoY) e não centralizar a diferença de altura,
+                // forçamos o topo da foto a colar no topo do buraco transparente.
+                // O excesso de fotos muito altas vai para o fundo (barriga/corpo).
+                const y = photoY;
 
+                ctx.save();
                 ctx.drawImage(userImg, x, y, w, h);
                 ctx.restore();
 
-                // 3. Desenhar o Template (PNG) por cima da foto
-                // Isso garante que a foto fique "encaixada" atrás dos elementos gráficos
+                // 3. Desenha a máscara (Template PNG) por CIMA da foto
+                // Como o PNG tem o recorte pronto e elementos (Selo, bola, logo), 
+                // eles ficarão perfeitamente desenhados sobre a foto do participante.
                 ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-                
-                // 4. Desenhar "EU VOU!" e "Copa CEGP" (Elementos Extras sobrepostos)
-                // Caso o template já tenha esses elementos, eles serão desenhados no passo 3.
-                // Se precisar reforçar ou adicionar dinamicamente:
-                
-                // Exemplo: Selo "EU VOU" (se não estiver no PNG ou precisar de destaque)
-                // ctx.save();
-                // ... lógica de desenho extra ...
-                // ctx.restore();
 
                 // Mostrar Resultado
                 previewImg.src = canvas.toDataURL('image/png');
@@ -703,7 +651,8 @@
             };
             
             background.onerror = function() {
-                alert("Erro ao carregar o modelo de fundo.");
+                alert("Erro ao carregar o modelo de fundo. Verifique sua conexão.");
+                uploadArea.classList.remove('opacity-50', 'pointer-events-none');
             };
         }
 
@@ -725,7 +674,7 @@
         }
     </script>
 
-    <!-- CTA / Footer -->
+    <!-- Footer -->
     <footer class="bg-cegpDark text-white pt-20 pb-10 border-t-8 border-cegpYellow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-12 mb-16">
@@ -773,24 +722,15 @@
         </div>
     </footer>
 
-    <!-- Simple Script for Tabs -->
     <script>
         function switchTab(dayId) {
-            // Hide all contents
             document.getElementById('day1').classList.add('hidden');
             document.getElementById('day2').classList.add('hidden');
-            
-            // Reset buttons
             document.getElementById('btn-day1').classList.remove('bg-cegpGreen', 'text-white');
             document.getElementById('btn-day1').classList.add('bg-gray-200', 'text-gray-600');
-            
             document.getElementById('btn-day2').classList.remove('bg-cegpGreen', 'text-white');
             document.getElementById('btn-day2').classList.add('bg-gray-200', 'text-gray-600');
-
-            // Show selected content
             document.getElementById(dayId).classList.remove('hidden');
-
-            // Highlight selected button
             const activeBtn = document.getElementById('btn-' + dayId);
             activeBtn.classList.remove('bg-gray-200', 'text-gray-600');
             activeBtn.classList.add('bg-cegpGreen', 'text-white');
