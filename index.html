@@ -319,10 +319,11 @@
                 <h2 class="text-4xl md:text-5xl font-black text-white mt-2 uppercase">Nossa Seleção de Craques</h2>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Arquitetura atualizada: Flexbox centralizado para lidar com número ímpar de cards (13) garantindo simetria -->
+            <div class="flex flex-wrap justify-center gap-8">
                 
                 <!-- Palestrante: Alysson Costa -->
-                <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/ZpFkJbqn/alysson.jpg" alt="Alysson" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
@@ -333,7 +334,7 @@
                 </div>
 
                 <!-- Palestrante: Andrea Tenuta -->
-                <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/Zzgkc06q/andrea.jpg" alt="Andrea" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
@@ -344,18 +345,18 @@
                 </div>
 
                 <!-- Palestrante: Breno Oliveira -->
-                <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/ZzrPJ9fP/breno.jpg" alt="Breno" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-white mb-3">Breno Oliveira</h3>
-                        <p class="text-gray-400 text-xs">Empreendedor, referência na qualificação de atendimento ao público surdos e proprietário da il Sordo, gelateria com lojas em Aracaju, Salvador e São Paulo. Atua na formação de equipes, com foco no atendimento e inovação no mercado de trabalho focado na inclusão produtiva da comunidade surda. É surdo profundo desde o nascimento, mas isso não o impediu de ganhar o mercado de palestras, atuando ao lado de grandes players do mercado.</p>
+                        <p class="text-gray-400 text-xs">Empreendedor e proprietário da il Sordo (Aracaju, Salvador, SP). Atua na formação de equipes com foco em inovação e inclusão produtiva da comunidade surda. Surdo profundo desde o nascimento, atua como palestrante ao lado de grandes players do mercado.</p>
                     </div>
                 </div>
 
                 <!-- Palestrante: Celina Joppert -->
-                <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/dwTtmyRW/celina.jpg" alt="Celina" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
@@ -365,8 +366,19 @@
                     </div>
                 </div>
 
+                <!-- Palestrante: Daniela Vasconcelos -->
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                    <div class="h-64 overflow-hidden bg-gray-700">
+                        <img src="https://i.ibb.co/YBWrdnQ8/daniela.jpg" alt="Daniela" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-3">Daniela Vasconcelos</h3>
+                        <p class="text-gray-400 text-xs">Auditora-Fiscal do Trabalho atuando na SRTE em Sergipe, com foco na área de Segurança e Saúde no Trabalho (SST). Formada em Odontologia e ingressou na Auditoria Fiscal Federal em 2010, enquanto cursava a faculdade de Direito.</p>
+                    </div>
+                </div>
+
                 <!-- Palestrante: David Braga -->
-                <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/svqnMKMc/david.jpg" alt="David" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
@@ -376,8 +388,19 @@
                     </div>
                 </div>
 
+                <!-- Palestrante: Felippe Farias -->
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                    <div class="h-64 overflow-hidden bg-gray-700">
+                        <img src="https://i.ibb.co/PvvSM4F5/felipe.jpg" alt="Felippe" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-3">Felippe Farias</h3>
+                        <p class="text-gray-400 text-xs">HR Business Partner estratégico na Sólides Tecnologia, com mais de 15 anos de experiência em tech e mercado financeiro. Especialista em People Strategy, performance e retenção, atua conectando estratégia de negócio, cultura e desenvolvimento organizacional.</p>
+                    </div>
+                </div>
+
                 <!-- Palestrante: Gabriela Augusto -->
-                <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/p6YkQMDy/gabriela.jpg" alt="Gabriela" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
@@ -388,7 +411,7 @@
                 </div>
 
                 <!-- Palestrante: Marina Farias -->
-                <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/6Ryg7Cwr/marina.jpg" alt="Marina" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
@@ -399,7 +422,7 @@
                 </div>
 
                 <!-- Palestrante: Milton Marinho -->
-                <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/pr3ZSttm/milton.jpg" alt="Milton" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
@@ -409,8 +432,19 @@
                     </div>
                 </div>
 
+                <!-- Palestrante: Patrick Coutinho -->
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                    <div class="h-64 overflow-hidden bg-gray-700">
+                        <img src="https://i.ibb.co/0R0Yy1C5/patrick.jpg" alt="Patrick" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-3">Patrick Coutinho</h3>
+                        <p class="text-gray-400 text-xs">Advogado Trabalhista Especialista (UFBA), com formações em Negociações Estratégicas (INSPER) e Corporate Storytelling (HBR). Conselheiro jurídico da CBIC e delegado-empregador na II CNT/MTE. Assessora grupos empresariais convertendo passivo em vantagem competitiva.</p>
+                    </div>
+                </div>
+
                 <!-- Palestrante: Renata Lourdes -->
-                <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/ttpCgfv/renata.jpg" alt="Renata" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
@@ -421,7 +455,7 @@
                 </div>
 
                 <!-- Palestrante: Thayslane Costa -->
-                <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
+                <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] group relative bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition hover:-translate-y-2">
                     <div class="h-64 overflow-hidden bg-gray-700">
                         <img src="https://i.ibb.co/fY2hb242/thayslane.jpg" alt="Thayslane" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 object-top">
                     </div>
@@ -435,36 +469,736 @@
         </div>
     </section>
 
-    <!-- Schedule Section -->
-    <section id="programacao" class="py-24 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-cegpGreen font-bold tracking-widest uppercase">Cronograma</span>
+    <!-- Schedule Section (TABELA DE JOGOS ATUALIZADA) -->
+    <section id="programacao" class="py-24 bg-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-cegpGreen font-bold tracking-widest uppercase">Cronograma Oficial</span>
                 <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 uppercase">Tabela de Jogos</h2>
             </div>
-            <div class="bg-gray-50 border-4 border-dashed border-gray-200 rounded-3xl p-12 text-center relative overflow-hidden group hover:border-cegpYellow transition-colors duration-500">
-                <div class="absolute top-0 right-0 -mt-10 -mr-10 text-gray-100 transform rotate-12 transition-transform group-hover:scale-110">
-                    <i class="fas fa-clipboard-list text-9xl"></i>
-                </div>
-                <div class="relative z-10 flex flex-col items-center">
-                    <div class="inline-flex items-center justify-center w-24 h-24 bg-white rounded-full mb-6 text-cegpYellow shadow-lg animate-pulse border-4 border-cegpYellow">
-                        <i class="fas fa-stopwatch text-4xl"></i>
+
+            <!-- Abas de Navegação -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+                <button id="btn-day1" onclick="switchTab('day1')" class="px-8 py-4 rounded-full font-black text-sm uppercase transition-all bg-cegpGreen text-white shadow-[0_10px_20px_rgba(0,156,59,0.3)] border-2 border-transparent">
+                    <i class="far fa-calendar-alt mr-2"></i> 21 de Maio (1º Tempo)
+                </button>
+                <button id="btn-day2" onclick="switchTab('day2')" class="px-8 py-4 rounded-full font-black text-sm uppercase transition-all bg-gray-100 text-gray-500 hover:bg-gray-200 border-2 border-transparent hover:text-cegpBlue">
+                    <i class="far fa-calendar-check mr-2"></i> 22 de Maio (2º Tempo)
+                </button>
+            </div>
+
+            <!-- DIA 1: 21 DE MAIO -->
+            <div id="day1" class="space-y-0 animate-fade-in-up">
+                
+                <!-- 08:00 - Credenciamento -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">08:00</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">60 min</span>
                     </div>
-                    <h3 class="text-3xl font-black text-gray-800 mb-4 uppercase">Definindo a Tática</h3>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-                        Nossos técnicos estão finalizando os últimos detalhes da escalação de horários e temas para garantir um espetáculo inesquecível.
-                        <br><br>
-                        <span class="font-bold text-cegpGreen">A programação completa será divulgada em breve!</span>
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <div class="bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-200 text-sm font-bold text-gray-500 flex items-center">
-                            <i class="fas fa-calendar-alt mr-3 text-cegpGreen text-xl"></i> 21 de Maio (1º Tempo)
-                        </div>
-                        <div class="bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-200 text-sm font-bold text-gray-500 flex items-center">
-                            <i class="fas fa-calendar-check mr-3 text-cegpGreen text-xl"></i> 22 de Maio (2º Tempo)
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-gray-200 flex items-center justify-center text-gray-600 mt-1">
+                        <i class="fas fa-id-badge text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100">
+                            <h4 class="text-lg font-bold text-gray-900 uppercase">Credenciamento & Welcome Coffee</h4>
                         </div>
                     </div>
                 </div>
+
+                <!-- 09:00 - Abertura -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">09:00</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">30 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpGreen flex items-center justify-center shadow-md text-white mt-1">
+                        <i class="fas fa-flag-checkered text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group-hover:-translate-y-1 transform duration-300">
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-green-50 text-green-700 mb-3">Ação</span>
+                            <h4 class="text-xl font-black text-gray-900 mb-2 uppercase">Abertura Oficial</h4>
+                            <p class="text-sm text-gray-600 font-medium">Ginástica Rítmica (Josimar) • Apresentação Quilombola (Izabel) • Representação Governamental (Aldecy)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 09:30 - Cerimonial -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">09:30</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">10 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpBlue flex items-center justify-center shadow-md text-white mt-1">
+                        <i class="fas fa-microphone-alt text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-cegpBlue transition-colors">
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-blue-50 text-blue-700 mb-3">Cerimonial</span>
+                            <h4 class="text-lg font-black text-gray-900 mb-2">Apresentação do tema e boas-vindas</h4>
+                            <p class="text-sm text-gray-600 font-medium">ABRH Brasil • Aldecy Mecenas • Izabel Camacho</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 09:40 - Palestra Magna 1 -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">09:40</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">50 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpYellow flex items-center justify-center shadow-md text-cegpBlue mt-1">
+                        <i class="fas fa-star text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all group-hover:-translate-y-1 transform duration-300 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-16 h-16 bg-yellow-50 rounded-bl-full -z-10"></div>
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-yellow-50 text-yellow-700 mb-3 border border-yellow-200">Palestra Magna 1 • Motivacional</span>
+                            <h4 class="text-2xl font-black text-gray-900 mb-3 uppercase">Encontre a sua Voz</h4>
+                            <div class="flex items-center text-sm font-bold text-cegpBlue">
+                                <img src="https://i.ibb.co/dwTtmyRW/celina.jpg" class="w-8 h-8 rounded-full object-cover border-2 border-cegpYellow mr-3" alt="Avatar">
+                                Celina Joppert
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10:30 - MUNDO ABRH -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">10:30</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">15 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-blue-100 flex items-center justify-center text-blue-600 mt-1">
+                        <i class="fas fa-globe text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                            <h4 class="text-sm font-bold text-cegpBlue uppercase">Mundo ABRH-SE / Patrocinadores</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10:45 - Painel -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">10:45</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">50 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-white border-2 border-cegpBlue flex items-center justify-center text-cegpBlue mt-1 shadow-sm">
+                        <i class="fas fa-users text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-cegpBlue transition-colors group-hover:-translate-y-1 transform duration-300">
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-gray-100 text-gray-700 mb-3">Painel • Liderança Feminina</span>
+                            <h4 class="text-xl font-black text-gray-900 mb-3">Estratégias de Equipe de Alta Performance / Liderar</h4>
+                            <div class="space-y-1 text-sm text-gray-600">
+                                <p><i class="fas fa-check text-cegpGreen mr-2"></i> <strong>Thayslane Costa</strong> (Árbitra FIFA)</p>
+                                <p><i class="fas fa-check text-cegpGreen mr-2"></i> <strong>Mariana Dantas</strong> (Sec. Esporte e Lazer)</p>
+                                <p class="mt-2 pt-2 border-t border-gray-100"><i class="fas fa-bullhorn text-gray-400 mr-2"></i> Mediador: Josimar Camacho</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11:35 - Q&A -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">11:35</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-gray-100 flex items-center justify-center text-gray-400 mt-1">
+                        <i class="fas fa-comments text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="pt-2"><h4 class="text-sm font-bold text-gray-600 uppercase">Respostas das Perguntas</h4></div>
+                    </div>
+                </div>
+
+                <!-- 11:45 - Intervalo -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">11:45</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-orange-100 flex items-center justify-center text-orange-500 mt-1">
+                        <i class="fas fa-coffee text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-orange-50 p-4 rounded-xl border border-orange-100 border-dashed">
+                            <h4 class="text-sm font-bold text-orange-800 uppercase">Intervalo Livre</h4>
+                            <p class="text-xs text-orange-600 mt-1">Networking, Feira de Expositores e Lançamento de Livros</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12:00 - Almoço -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">12:00</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">90 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpGreen flex items-center justify-center text-white mt-1 shadow-sm">
+                        <i class="fas fa-utensils text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-green-50 p-4 rounded-xl border border-green-200 text-center shadow-inner">
+                            <h4 class="text-lg font-black text-cegpGreen uppercase tracking-widest">Almoço</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13:30 - Retorno -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">13:30</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-blue-100 flex items-center justify-center text-blue-600 mt-1">
+                        <i class="fas fa-globe text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100"><h4 class="text-sm font-bold text-cegpBlue uppercase">Mundo ABRH-SE / Patrocinadores</h4></div>
+                    </div>
+                </div>
+
+                <!-- 13:45 - RH Movimento -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">13:45</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-purple-100 flex items-center justify-center text-purple-600 mt-1">
+                        <i class="fas fa-running text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="pt-2"><h4 class="text-sm font-bold text-gray-700 uppercase">RH em Movimento (Ginástica Laboral Salutis)</h4></div>
+                    </div>
+                </div>
+
+                <!-- 14:00 - Palestra Magna 2 -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">14:00</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">50 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpYellow flex items-center justify-center shadow-md text-cegpBlue mt-1">
+                        <i class="fas fa-star text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all group-hover:-translate-y-1 transform duration-300">
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-yellow-50 text-yellow-700 mb-3 border border-yellow-200">Palestra Magna 2 • Liderança</span>
+                            <h4 class="text-2xl font-black text-gray-900 mb-3 uppercase">Liderança de Alto Impacto</h4>
+                            <div class="flex items-center text-sm font-bold text-cegpBlue">
+                                <img src="https://i.ibb.co/svqnMKMc/david.jpg" class="w-8 h-8 rounded-full object-cover border-2 border-cegpYellow mr-3" alt="Davi Braga">
+                                Davi Braga
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14:50 - Sorteios -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">14:50</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpYellow flex items-center justify-center text-cegpDark mt-1">
+                        <i class="fas fa-gift text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="pt-2"><h4 class="text-sm font-bold text-gray-700 uppercase">Momento de Sorteios</h4></div>
+                    </div>
+                </div>
+
+                <!-- 15:00 - TED Diversidade -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">15:00</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">30 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpGreen flex items-center justify-center shadow-md text-white mt-1">
+                        <i class="fas fa-lightbulb text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-cegpGreen transition-colors group-hover:-translate-y-1 transform duration-300">
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-green-50 text-green-700 mb-3">TED • Diversidade</span>
+                            <h4 class="text-xl font-black text-gray-900 mb-3">Diversidade & Inclusão como Estratégia de Negócio</h4>
+                            <div class="flex items-center text-sm font-bold text-cegpBlue">
+                                <img src="https://i.ibb.co/p6YkQMDy/gabriela.jpg" class="w-8 h-8 rounded-full object-cover border-2 border-cegpGreen mr-3" alt="Avatar">
+                                Gabriela Augusto
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15:30 - Q&A -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">15:30</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-gray-100 flex items-center justify-center text-gray-400 mt-1">
+                        <i class="fas fa-comments text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8"><div class="pt-2"><h4 class="text-sm font-bold text-gray-600 uppercase">Respostas das Perguntas</h4></div></div>
+                </div>
+
+                <!-- 15:40 - Intervalo -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">15:40</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-orange-100 flex items-center justify-center text-orange-500 mt-1">
+                        <i class="fas fa-coffee text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-orange-50 p-4 rounded-xl border border-orange-100 border-dashed">
+                            <h4 class="text-sm font-bold text-orange-800 uppercase">Intervalo Livre</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15:55 - TED Comportamento -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">15:55</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">40 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpGreen flex items-center justify-center shadow-md text-white mt-1">
+                        <i class="fas fa-lightbulb text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-cegpGreen transition-colors group-hover:-translate-y-1 transform duration-300">
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-green-50 text-green-700 mb-3">TED • Comportamento Humano</span>
+                            <h4 class="text-xl font-black text-gray-900 mb-3">A Tática da Vitória: Como Dados e Comportamento Transformam Grupos em Times de Alta Performance</h4>
+                            <div class="flex items-center text-sm font-bold text-cegpBlue">
+                                <i class="fas fa-user-circle text-2xl mr-3 text-gray-400"></i> Felippe Farias de Jesus
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16:35 - Q&A -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">16:35</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-gray-100 flex items-center justify-center text-gray-400 mt-1">
+                        <i class="fas fa-comments text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8"><div class="pt-2"><h4 class="text-sm font-bold text-gray-600 uppercase">Respostas das Perguntas</h4></div></div>
+                </div>
+
+                <!-- 16:45 - Palestra Magna 3 -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">16:45</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">50 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpYellow flex items-center justify-center shadow-md text-cegpBlue mt-1">
+                        <i class="fas fa-star text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all group-hover:-translate-y-1 transform duration-300 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-16 h-16 bg-yellow-50 rounded-bl-full -z-10"></div>
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-yellow-50 text-yellow-700 mb-3 border border-yellow-200">Palestra Magna 3</span>
+                            <h4 class="text-2xl font-black text-gray-900 mb-3 uppercase">ATITUDENOW</h4>
+                            <div class="flex items-center text-sm font-bold text-cegpBlue">
+                                <img src="https://i.ibb.co/ZpFkJbqn/alysson.jpg" class="w-8 h-8 rounded-full object-cover border-2 border-cegpYellow mr-3" alt="Alysson">
+                                Alysson Costa
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 17:35 - Encerramento -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-gray-400">17:35</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-gray-800 flex items-center justify-center text-white mt-1 shadow-sm">
+                        <i class="fas fa-power-off text-sm"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="pt-2"><h4 class="text-lg font-black text-gray-800 uppercase">Encerramento do 1º Dia</h4></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIA 2: 22 DE MAIO -->
+            <div id="day2" class="space-y-0 hidden animate-fade-in-up">
+                
+                <!-- 08:00 - Credenciamento -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">08:00</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-gray-200 flex items-center justify-center text-gray-600 mt-1">
+                        <i class="fas fa-id-badge text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100"><h4 class="text-lg font-bold text-gray-900 uppercase">Recepção</h4></div>
+                    </div>
+                </div>
+
+                <!-- 08:30 - Abertura -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">08:30</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpGreen flex items-center justify-center text-white mt-1">
+                        <i class="fas fa-play text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8"><div class="pt-2"><h4 class="text-sm font-bold text-gray-700 uppercase">Abertura Oficial</h4></div></div>
+                </div>
+
+                <!-- 08:45 - Magna 4 -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">08:45</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">50 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpYellow flex items-center justify-center shadow-md text-cegpBlue mt-1">
+                        <i class="fas fa-star text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all group-hover:-translate-y-1 transform duration-300">
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-yellow-50 text-yellow-700 mb-3 border border-yellow-200">Palestra Magna 4 • Técnica</span>
+                            <h4 class="text-2xl font-black text-gray-900 mb-3 uppercase">A Remuneração do Futuro</h4>
+                            <div class="flex items-center text-sm font-bold text-cegpBlue">
+                                <img src="https://i.ibb.co/pr3ZSttm/milton.jpg" class="w-8 h-8 rounded-full object-cover border-2 border-cegpYellow mr-3" alt="Avatar">
+                                Milton Marinho
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 09:35 - Q&A -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">09:35</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-gray-100 flex items-center justify-center text-gray-400 mt-1">
+                        <i class="fas fa-comments text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8"><div class="pt-2"><h4 class="text-sm font-bold text-gray-600 uppercase">Respostas das Perguntas</h4></div></div>
+                </div>
+
+                <!-- 09:45 - TED Financeiro -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">09:45</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">50 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpGreen flex items-center justify-center shadow-md text-white mt-1">
+                        <i class="fas fa-lightbulb text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-cegpGreen transition-colors group-hover:-translate-y-1 transform duration-300">
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-green-50 text-green-700 mb-3">TED</span>
+                            <h4 class="text-xl font-black text-gray-900 mb-3 uppercase">A nova era do bem estar financeiro</h4>
+                            <div class="flex items-center text-sm font-bold text-cegpBlue">
+                                <img src="https://i.ibb.co/6Ryg7Cwr/marina.jpg" class="w-8 h-8 rounded-full object-cover border-2 border-cegpGreen mr-3" alt="Avatar">
+                                Marina Farias
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10:35 - Intervalo -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">10:35</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-orange-100 flex items-center justify-center text-orange-500 mt-1">
+                        <i class="fas fa-coffee text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-orange-50 p-4 rounded-xl border border-orange-100 border-dashed">
+                            <h4 class="text-sm font-bold text-orange-800 uppercase">Intervalo Livre</h4>
+                            <p class="text-xs text-orange-600 mt-1">Networking, Feira de Expositores e Lançamento de Livros</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10:50 - MUNDO ABRH Software -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">10:50</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-blue-100 flex items-center justify-center text-blue-600 mt-1">
+                        <i class="fas fa-globe text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                            <h4 class="text-sm font-bold text-cegpBlue uppercase">Mundo ABRH-SE / Patrocinadores</h4>
+                            <p class="text-xs text-blue-800 mt-1">Apresentação do software de gestão de riscos psicossociais (André Cavalcanti)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11:00 - Painel NR1 -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">11:00</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">30 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-white border-2 border-cegpBlue flex items-center justify-center text-cegpBlue mt-1 shadow-sm">
+                        <i class="fas fa-users text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-cegpBlue transition-colors group-hover:-translate-y-1 transform duration-300">
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-gray-100 text-gray-700 mb-3">Painel</span>
+                            <h4 class="text-xl font-black text-gray-900 mb-3">NR1 - Atualizações dos Riscos Psicossociais</h4>
+                            <div class="space-y-1 text-sm text-gray-600">
+                                <p><i class="fas fa-check text-cegpGreen mr-2"></i> <strong>Daniela Vasconcelos</strong> (Auditora-Fiscal do Trabalho)</p>
+                                <p><i class="fas fa-check text-cegpGreen mr-2"></i> <strong>Dr. Gustavo</strong> (Médico do Trabalho / Perito INSS)</p>
+                                <p class="mt-2 pt-2 border-t border-gray-100"><i class="fas fa-bullhorn text-gray-400 mr-2"></i> Mediador: Convidado Especial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11:30 - Q&A -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">11:30</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-gray-100 flex items-center justify-center text-gray-400 mt-1">
+                        <i class="fas fa-comments text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8"><div class="pt-2"><h4 class="text-sm font-bold text-gray-600 uppercase">Respostas das Perguntas</h4></div></div>
+                </div>
+
+                <!-- 11:40 - Painel Trabalhista -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">11:40</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">30 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-white border-2 border-cegpBlue flex items-center justify-center text-cegpBlue mt-1 shadow-sm">
+                        <i class="fas fa-users text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-cegpBlue transition-colors group-hover:-translate-y-1 transform duration-300">
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-gray-100 text-gray-700 mb-3">Painel • Relações Trabalhistas / Empregabilidade</span>
+                            <h4 class="text-xl font-black text-gray-900 mb-3">Relações Trabalhistas e Empregabilidade PCD</h4>
+                            <div class="space-y-1 text-sm text-gray-600">
+                                <p><i class="fas fa-check text-cegpGreen mr-2"></i> <strong>Representante do INSS</strong></p>
+                                <p><i class="fas fa-check text-cegpGreen mr-2"></i> <strong>Patrick Coutinho</strong> (Jurídico)</p>
+                                <div class="mt-2 pt-2 border-t border-gray-100 flex items-center">
+                                    <i class="fas fa-bullhorn text-gray-400 mr-2"></i> Mediador: 
+                                    <img src="https://i.ibb.co/ZzrPJ9fP/breno.jpg" class="w-5 h-5 rounded-full object-cover border border-gray-300 mx-2" alt="Avatar">
+                                    <strong>Breno Oliveira</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12:10 - Q&A -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">12:10</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-gray-100 flex items-center justify-center text-gray-400 mt-1">
+                        <i class="fas fa-comments text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8"><div class="pt-2"><h4 class="text-sm font-bold text-gray-600 uppercase">Respostas das Perguntas</h4></div></div>
+                </div>
+
+                <!-- 12:20 - Almoço -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">12:20</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">1h 40m</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpGreen flex items-center justify-center text-white mt-1 shadow-sm">
+                        <i class="fas fa-utensils text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-green-50 p-4 rounded-xl border border-green-200 text-center shadow-inner">
+                            <h4 class="text-lg font-black text-cegpGreen uppercase tracking-widest">Almoço</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14:00 - MUNDO ABRH -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">14:00</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-blue-100 flex items-center justify-center text-blue-600 mt-1">
+                        <i class="fas fa-globe text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100"><h4 class="text-sm font-bold text-cegpBlue uppercase">Mundo ABRH-SE / Patrocinadores</h4></div>
+                    </div>
+                </div>
+
+                <!-- 14:15 - RH Movimento -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">14:15</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-purple-100 flex items-center justify-center text-purple-600 mt-1">
+                        <i class="fas fa-running text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8"><div class="pt-2"><h4 class="text-sm font-bold text-gray-700 uppercase">Momento RH em Movimento</h4></div></div>
+                </div>
+
+                <!-- 14:30 - Magna 5 -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">14:30</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">50 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpYellow flex items-center justify-center shadow-md text-cegpBlue mt-1">
+                        <i class="fas fa-star text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all group-hover:-translate-y-1 transform duration-300 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-16 h-16 bg-yellow-50 rounded-bl-full -z-10"></div>
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-yellow-50 text-yellow-700 mb-3 border border-yellow-200">Palestra Magna 5 • DEI</span>
+                            <h4 class="text-2xl font-black text-gray-900 mb-3 uppercase">Por que é preciso considerar pessoas 50+ na estratégia da força de trabalho?</h4>
+                            <div class="flex items-center text-sm font-bold text-cegpBlue">
+                                <img src="https://i.ibb.co/Zzgkc06q/andrea.jpg" class="w-8 h-8 rounded-full object-cover border-2 border-cegpYellow mr-3" alt="Avatar">
+                                Andrea Tenuta
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15:20 - Sorteios -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">15:20</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpYellow flex items-center justify-center text-cegpDark mt-1">
+                        <i class="fas fa-gift text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8"><div class="pt-2"><h4 class="text-sm font-bold text-gray-700 uppercase">Momento de Sorteios</h4></div></div>
+                </div>
+
+                <!-- 15:30 - Intervalo -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">15:30</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-orange-100 flex items-center justify-center text-orange-500 mt-1">
+                        <i class="fas fa-coffee text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-orange-50 p-4 rounded-xl border border-orange-100 border-dashed">
+                            <h4 class="text-sm font-bold text-orange-800 uppercase">Intervalo Livre</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15:45 - Prêmio Ser Humano -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">15:45</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">50 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpBlue flex items-center justify-center shadow-md text-white mt-1">
+                        <i class="fas fa-trophy text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-cegpBlue transition-colors group-hover:-translate-y-1 transform duration-300">
+                            <h4 class="text-xl font-black text-gray-900 mb-3 uppercase">Prêmio Ser Humano</h4>
+                            <div class="flex items-center text-sm font-bold text-gray-600">
+                                <i class="fas fa-user-circle mr-2 text-cegpGreen text-lg"></i> Aldecy Mecenas / Anne
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16:35 - MUNDO ABRH -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg font-bold text-gray-500">16:35</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">5 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-blue-100 flex items-center justify-center text-blue-600 mt-1">
+                        <i class="fas fa-globe text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-blue-50 p-4 rounded-xl border border-blue-100"><h4 class="text-sm font-bold text-cegpBlue uppercase">Mundo ABRH-SE / Patrocinadores</h4></div>
+                    </div>
+                </div>
+
+                <!-- 16:40 - Magna 6 -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="absolute left-[39px] top-10 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpBlue">16:40</span>
+                        <span class="block text-[10px] text-gray-500 font-bold uppercase mt-1">50 min</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpYellow flex items-center justify-center shadow-md text-cegpBlue mt-1">
+                        <i class="fas fa-star text-sm"></i>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all group-hover:-translate-y-1 transform duration-300 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-16 h-16 bg-yellow-50 rounded-bl-full -z-10"></div>
+                            <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-yellow-50 text-yellow-700 mb-3 border border-yellow-200">Palestra Magna 6 • Inspiracional</span>
+                            <h4 class="text-2xl font-black text-gray-900 mb-3 uppercase">Cultura do cuidado e excelência no encantamento de Pessoas</h4>
+                            <p class="text-sm text-gray-500 mb-3 italic">(Inspirado no Padrão Disney)</p>
+                            <div class="flex items-center text-sm font-bold text-cegpBlue">
+                                <img src="https://i.ibb.co/ttpCgfv/renata.jpg" class="w-8 h-8 rounded-full object-cover border-2 border-cegpYellow mr-3" alt="Avatar">
+                                Renata Lourdes
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 17:30 - Happy Hour -->
+                <div class="relative flex gap-4 md:gap-6 group">
+                    <div class="flex-shrink-0 w-16 md:w-24 text-right pt-2">
+                        <span class="text-lg md:text-xl font-black text-cegpGreen">17:30</span>
+                    </div>
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 rounded-full border-4 border-white bg-cegpGreen flex items-center justify-center text-white mt-1 shadow-lg shadow-green-200 animate-bounce">
+                        <i class="fas fa-glass-cheers text-sm"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="pt-2"><h4 class="text-xl font-black text-cegpGreen uppercase">Happy Hour - Hora Feliz</h4></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -532,7 +1266,7 @@
         </div>
     </section>
 
-    <!-- NEW SECTION: Gerador "Eu Vou!" (Resolvido Geometria da Foto) -->
+    <!-- NEW SECTION: Gerador "Eu Vou!" -->
     <section id="euvou" class="py-24 bg-gray-900 text-white relative overflow-hidden">
         <div class="absolute top-0 right-0 w-64 h-64 bg-cegpGreen rounded-full filter blur-[100px] opacity-20"></div>
         <div class="absolute bottom-0 left-0 w-64 h-64 bg-cegpYellow rounded-full filter blur-[100px] opacity-10"></div>
@@ -630,43 +1364,46 @@
             background.src = "https://i.ibb.co/v6JLy8Br/euvou.png";
             
             background.onload = function() {
-                // 1. Limpa o canvas e coloca fundo branco garantido
+                // 1. Limpa e Fundo Branco (para cobrir vazamentos)
                 ctx.fillStyle = '#FFFFFF';
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-                // 2. Área de pintura da foto (Box Model Ajustado)
-                // O buraco transparente do PNG começa por volta do Y=430.
-                // Se desenharmos acima disso, a máscara amarela cobre o topo da foto (cabeça).
-                // AJUSTE FINO: Descendo para 600 para garantir margem de segurança no topo (testa/cabelo).
-                const photoX = 90;
-                const photoY = 600; // Valor cravado em 600
-                const photoWidth = 900; // Largura do buraco
-                const photoHeight = 1150; // Altura suficiente para descer atrás do texto "EU VOU"
+                // 2. Geometria de Enquadramento Inteligente (Box Model Anti-Corte)
+                // Estes valores definem o "quadro" onde a foto será desenhada antes da máscara ser sobreposta.
+                const photoWidth = 1000; // Bem largo para não ter bordas brancas laterais
+                const photoHeight = 1300; // Bem alto para preencher até a base
+                const photoX = 40; // Leve recuo da margem esquerda
+                const photoY = 380; // Início alto, garantindo que vai ficar POR TRÁS do bloco verde do topo do PNG.
 
-                // Lógica de "Object-fit: Cover"
+                // Lógica Cover (Preenchimento sem distorcer)
                 const scale = Math.max(photoWidth / userImg.width, photoHeight / userImg.height);
                 const w = userImg.width * scale;
                 const h = userImg.height * scale;
                 
-                // Centraliza no eixo X
+                // Centralização Horizontal Segura
                 const x = photoX + (photoWidth - w) / 2;
                 
-                // EIXO Y (Garantia anti-corte de cabeça):
-                // Ao ancorar no Y exato (photoY) e não centralizar a diferença de altura,
-                // forçamos o topo da foto a colar no topo do buraco transparente.
-                // O excesso de fotos muito altas vai para o fundo (barriga/corpo).
-                const y = photoY;
+                // ANCORAGEM VERTICAL INTELIGENTE:
+                // Em vez de y = photoY + (photoHeight - h) / 2 (que centraliza e corta a cabeça)
+                // ou y = photoY (que cola no topo absoluto e pode ficar muito alto dependendo do recorte da máscara),
+                // ancoramos com um offset suave de 10% da diferença.
+                // Isso puxa a imagem minimamente para baixo, mantendo o foco no rosto.
+                const y = photoY + (photoHeight - h) * 0.1;
 
                 ctx.save();
+                // Opcional: Criar uma máscara retangular para não vazar a foto além da área delimitada.
+                ctx.beginPath();
+                ctx.rect(photoX, photoY, photoWidth, photoHeight);
+                ctx.clip();
+                
+                // Desenha a foto do usuário
                 ctx.drawImage(userImg, x, y, w, h);
                 ctx.restore();
 
-                // 3. Desenha a máscara (Template PNG) por CIMA da foto
-                // Como o PNG tem o recorte pronto e elementos (Selo, bola, logo), 
-                // eles ficarão perfeitamente desenhados sobre a foto do participante.
+                // 3. Aplica o Template PNG (Máscara) por CIMA da foto
                 ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
-                // Mostrar Resultado
+                // Mostra o resultado final na tela
                 previewImg.src = canvas.toDataURL('image/png');
                 previewImg.classList.remove('hidden');
                 placeholderText.classList.add('hidden');
@@ -704,7 +1441,10 @@
             <div class="grid md:grid-cols-4 gap-12 mb-16">
                 <div class="col-span-1 md:col-span-2">
                     <div class="mb-6">
-                        <a href="https://abrhse.com.br" target="_blank" class="inline-block font-bold text-3xl tracking-tighter hover:opacity-80 transition-opacity">
+                        <a href="https://abrhse.com.br" target="_blank" class="inline-flex items-center font-bold text-3xl tracking-tighter hover:opacity-80 transition-opacity">
+                            <div class="bg-white rounded-xl p-1 border-2 border-cegpYellow w-12 h-12 flex items-center justify-center text-cegpGreen font-bold text-[11px] text-center leading-tight mr-4">
+                                COPA<br>CEGP
+                            </div>
                             ABRH<span class="text-cegpYellow">-SE</span>
                         </a>
                     </div>
@@ -712,10 +1452,10 @@
                         Há 30 anos transformando a gestão de pessoas em Sergipe. Junte-se a nós para a maior celebração do RH do estado.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="https://www.instagram.com/abrhse" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/abrhsergipe/" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/5579981335766" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://youtube.com/@abrhse?si=kNVwOh6wbsMfZpi7" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/abrhse" target="_blank" class="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/abrhsergipe/" target="_blank" class="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/5579981335766" target="_blank" class="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@abrhse?si=kNVwOh6wbsMfZpi7" target="_blank" class="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center hover:bg-cegpYellow hover:text-cegpDark transition-colors"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
@@ -747,16 +1487,23 @@
 
     <script>
         function switchTab(dayId) {
+            // Ocultar os dois conteúdos
             document.getElementById('day1').classList.add('hidden');
             document.getElementById('day2').classList.add('hidden');
-            document.getElementById('btn-day1').classList.remove('bg-cegpGreen', 'text-white');
-            document.getElementById('btn-day1').classList.add('bg-gray-200', 'text-gray-600');
-            document.getElementById('btn-day2').classList.remove('bg-cegpGreen', 'text-white');
-            document.getElementById('btn-day2').classList.add('bg-gray-200', 'text-gray-600');
+            
+            // Resetar botões para estado inativo (cinza)
+            const btn1 = document.getElementById('btn-day1');
+            const btn2 = document.getElementById('btn-day2');
+            
+            const inactiveClass = "px-8 py-4 rounded-full font-black text-sm uppercase transition-all bg-gray-100 text-gray-500 hover:bg-gray-200 border-2 border-transparent hover:text-cegpBlue";
+            const activeClass = "px-8 py-4 rounded-full font-black text-sm uppercase transition-all bg-cegpGreen text-white shadow-[0_10px_20px_rgba(0,156,59,0.3)] border-2 border-transparent";
+            
+            btn1.className = inactiveClass;
+            btn2.className = inactiveClass;
+
+            // Mostrar aba clicada e aplicar estilo ativo
             document.getElementById(dayId).classList.remove('hidden');
-            const activeBtn = document.getElementById('btn-' + dayId);
-            activeBtn.classList.remove('bg-gray-200', 'text-gray-600');
-            activeBtn.classList.add('bg-cegpGreen', 'text-white');
+            document.getElementById('btn-' + dayId).className = activeClass;
         }
     </script>
 </body>
